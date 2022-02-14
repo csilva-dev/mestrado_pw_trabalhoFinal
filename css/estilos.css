@@ -1,0 +1,33 @@
+#carouselExampleCaptions img {
+	object-fit: cover;
+	width: 100%;
+	height: 80vh;
+}
+
+#topo{
+	width: 100%; /*largura do elemento*/
+	height: 30vh;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+#logo{
+	float: left;
+	width: 50%;
+	height: 28vh;
+}
+#logo img{
+	object-fit: cover;
+	width: 100%;
+	height: 28vh;
+}
+#slogan{
+	float: left;
+	width: 50%;
+	height: 28vh;
+	text-align: center;
+}
+#slogan h1{
+	padding: 15px;
+	font-size: 25pt;
+	font-weight: bold;
+}
