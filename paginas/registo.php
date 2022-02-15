@@ -1,171 +1,48 @@
-<section class="h-100 h-custom gradient-custom-2">
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-12">
-        <div class="card card-registration card-registration-2" style="border-radius: 15px;">
-          <div class="card-body p-0">
-            <div class="row g-0">
-              <div class="col-lg-6">
-                <div class="p-5">
-                  <h3 class="fw-normal mb-5" style="color: #4835d4;">General Infomation</h3>
+<title>Registo</title>
 
-                  <div class="mb-4 pb-2">
-                    <select class="select">
-                      <option value="1">Title</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                      <option value="4">Four</option>
-                    </select>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6 mb-4 pb-2">
-
-                      <div class="form-outline">
-                        <input type="text" id="form3Examplev2" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Examplev2">First name</label>
-                      </div>
-
-                    </div>
-                    <div class="col-md-6 mb-4 pb-2">
-
-                      <div class="form-outline">
-                        <input type="text" id="form3Examplev3" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Examplev3">Last name</label>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <div class="mb-4 pb-2">
-                    <select class="select">
-                      <option value="1">Position</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                      <option value="4">Four</option>
-                    </select>
-                  </div>
-
-                  <div class="mb-4 pb-2">
-                    <div class="form-outline">
-                      <input type="text" id="form3Examplev4" class="form-control form-control-lg" />
-                      <label class="form-label" for="form3Examplev4">Position</label>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
-
-                      <div class="form-outline">
-                        <input type="text" id="form3Examplev5" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Examplev5">Bussines Arena</label>
-                      </div>
-
-                    </div>
-                    <div class="col-md-6">
-
-                      <select class="select">
-                        <option value="1">Employees</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="4">Four</option>
-                      </select>
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="col-lg-6 bg-indigo">
-                <div class="p-5">
-                  <h3 class="fw-normal mb-5">Contact Details</h3>
-
-                  <div class="mb-4 pb-2">
-                    <div class="form-outline form-white">
-                      <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
-                      <label class="form-label" for="form3Examplea2">Street + Nr</label>
-                    </div>
-                  </div>
-
-                  <div class="mb-4 pb-2">
-                    <div class="form-outline form-white">
-                      <input type="text" id="form3Examplea3" class="form-control form-control-lg" />
-                      <label class="form-label" for="form3Examplea3">Additional Information</label>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-5 mb-4 pb-2">
-
-                      <div class="form-outline form-white">
-                        <input type="text" id="form3Examplea4" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Examplea4">Zip Code</label>
-                      </div>
-
-                    </div>
-                    <div class="col-md-7 mb-4 pb-2">
-
-                      <div class="form-outline form-white">
-                        <input type="text" id="form3Examplea5" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Examplea5">Place</label>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <div class="mb-4 pb-2">
-                    <div class="form-outline form-white">
-                      <input type="text" id="form3Examplea6" class="form-control form-control-lg" />
-                      <label class="form-label" for="form3Examplea6">Country</label>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-5 mb-4 pb-2">
-
-                      <div class="form-outline form-white">
-                        <input type="text" id="form3Examplea7" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Examplea7">Code +</label>
-                      </div>
-
-                    </div>
-                    <div class="col-md-7 mb-4 pb-2">
-
-                      <div class="form-outline form-white">
-                        <input type="text" id="form3Examplea8" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Examplea8">Phone Number</label>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <div class="mb-4">
-                    <div class="form-outline form-white">
-                      <input type="text" id="form3Examplea9" class="form-control form-control-lg" />
-                      <label class="form-label" for="form3Examplea9">Your Email</label>
-                    </div>
-                  </div>
-
-                  <div class="form-check d-flex justify-content-start mb-4 pb-3">
-                    <input
-                      class="form-check-input me-3"
-                      type="checkbox"
-                      value=""
-                      id="form2Example3c"
-                    />
-                    <label class="form-check-label" for="form2Example3">
-                      I do accept the <a href="#!" class=""><u>Terms and Conditions</u></a> of your site.
-                    </label>
-                  </div>
-
-                  <button type="button" class="btn btn-light btn-lg" data-mdb-ripple-color="dark">Register</button>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<form method="POST" action="php/cliente/create.php">
+  <div class="mb-3">
+    <label for="formGroupExampleInput" class="form-label">Nome</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira o seu nome" name="nome">
   </div>
-</section>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Morada</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Insira a sua morada" name="morada">
+  </div>
+
+  <div class="mb-3">
+    <label for="formGroupExampleInput3" class="form-label">Código Postal</label>
+    <input type="number" class="form-control" id="formGroupExampleInput3" placeholder="Insira o seu código postal" name="cod_postal">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput4" class="form-label">Localidade</label>
+    <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Insira a sua localidade" name="localidade">
+  </div>
+
+  <div class="mb-3">
+    <label for="formGroupExampleInput5" class="form-label">Nº Contribuinte</label>
+    <input type="text" class="form-control" id="formGroupExampleInput5" placeholder="Insira o seu número de contribuinte" name="nif">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput6" class="form-label">Pais</label>
+    <select id="formGroupExampleInput6" class="form-select" name="pais">
+      <option selected>Escolha...</option>
+      <option>Portugal</option>
+      <option>Espanha</option>
+      <option>França</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput9" class="form-label">Email</label>
+    <input type="email" class="form-control" id="formGroupExampleInput9" placeholder="Insira o seu nome de utilizador" name="email">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput7" class="form-label">Nome de Utilizador</label>
+    <input type="text" class="form-control" id="formGroupExampleInput7" placeholder="Insira o seu nome de utilizador" name="username">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput8" class="form-label">Palavra Passe</label>
+    <input type="password" class="form-control" id="formGroupExampleInput8" placeholder="Insira a sua palavra passe" name="password">
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
