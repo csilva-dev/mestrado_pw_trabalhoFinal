@@ -38,27 +38,64 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
-	<div id="topo">
-		<div id="logo">
-			<img src="img/pastelaria.jpg">
+	<div class="container-fluid">
+		<div class="row" id="info">
+			<div class="col">				
+				<div class="row">
+					<div class="col">	
+						<i class="bi bi-bullseye" style="font-size: 150px"></i>
+					</div>
+					<div class="col">	
+						<p>MISSÃO</p>
+					</div>					
+				</div>
+			</div>
+			<div class="col">
+				<div class="row">
+					<div class="col">	
+						<i class="bi bi-bullseye" style="font-size: 150px"></i>
+					</div>
+					<div class="col">	
+						<p>VISÃO</p>
+					</div>					
+				</div>
+			</div>
+			<div class="col">
+				<div class="row">
+					<div class="col">	
+						<i class="bi bi-bullseye" style="font-size: 150px"></i>
+					</div>
+					<div class="col">	
+						<p>VALORES</p>
+					</div>					
+				</div>
+			</div>			
 		</div>
-		<div id="slogan">
-			<p>PASTERLARIA</p>
-		</div>
+		
 	</div>
-	<div id="topo">
-		<div id="slogan">
-			<p>PADARIA</p>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col" id="logo">
+				<img src="img/pastelaria.jpg">
+			</div>
+			<div class="col">
+				<p>PASTERLARIA</p>
+			</div>
 		</div>
-		<div id="logo">
-			<img src="img/padaria.jpg">
+		<div class="row">
+			<div class="col">
+				<p>PADARIA</p>				
+			</div>
+			<div class="col" id="logo">
+				<img src="img/padaria.jpg">
+			</div>
 		</div>
-	</div>
-	<div id="topo">
-		<div id="logo">
-			<img src="img/restaurante.jpg">
-		</div>
-		<div id="slogan">
-			<p>RESTAURANTE</p>
+		<div class="row">
+			<div class="col" id="logo">
+				<img src="img/restaurante.jpg">
+			</div>
+			<div class="col">
+				<p>RESTAURANTE</p>
+			</div>
 		</div>
 	</div>

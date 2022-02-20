@@ -1,23 +1,17 @@
 <?php 
-    class Database {
-        private $host = "localhost:3306";
-        private $database_name = "projetoWEB";
-        private $username = "root";
-        private $password = "password";
 
-        public $conn;
+$server = "localhost:3306";
+$user = "root";
+$pwd = "password";
+$bd = "projetoWEB";
 
-        public function getConnection(){
-            $this->conn = null;
-            try{
-                $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->database_name, $this->username, $this->password);
-                // set the PDO error mode to exception
-                $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                //$this->conn->exec("set names utf8");
-            }catch(PDOException $exception){
-                echo "Database could not be connected: " . $exception->getMessage();
-            }
-            return $this->conn;
-        }
-    }  
+$liga = mysqli_connect($server, $user, $pwd, $bd);
+
+if (!$liga) {
+    //echo "<script>alert('A ligação à base de dados falhou!');</script>";
+} else {
+    //echo "<script>alert('A ligação à base de dados foi estabelecida com sucesso!');</script>";
+}
+
+
 ?>

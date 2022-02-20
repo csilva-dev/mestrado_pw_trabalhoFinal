@@ -25,9 +25,14 @@
 					<a class="nav-link" href="index.php?page=contatenos">Contate-nos</a>
 				</li>
 			</ul>
-			<ul class="navbar-nav ms-auto">
-				<li class="nav-item" onclick="nomeCli('login')">
-					<a class="nav-link" href="index.php?page=login">Area de Cliente</a>
+			<ul class="navbar-nav ms-auto" id="navbar_">
+				<li class="nav-item dropdown">
+					<a id="menu_nome" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Area de Cliente</a>
+					<ul class="dropdown-menu ms-auto" aria-labelledby="navbarDropdownMenuLink">
+						<li>
+							<a id="acao" class="nav-link" href="index.php?page=login">Entrar</a>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		</div>
@@ -55,6 +60,14 @@
 		case "area_reservada":			
 			include 'area_reservada.php';
 			break;
+		case "sair":
+			session_destroy();
+			header("location: index.php");
+			?>
+			<script type="text/javascript">
+				mudaNavbar('', '');
+			</script>
+			<?php
 
 		default:
 			include 'home.php';
