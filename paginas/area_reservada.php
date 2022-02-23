@@ -1,28 +1,5 @@
-<title>Area Reservada</title>
-<div>
-    <?php
+<?php include 'php/actions/validaSessao.php'; ?>
 
-    session_start();
-
-    if(!isset($_SESSION['logado'])){
-        $message = "Tem que iniciar a sessão para aceder a esta funcionalidade!";
-        echo "<script type='text/javascript'>alert('$message');
-        window.location.href='index.php?menu=';
-        </script>";
-        session_destroy();
-    } else {
-
-        $role = isset($_SESSION['role']);
-
-        if ($role==="Administrador") {
-            include './paginas/admin/dashboard.php';
-
-        } elseif ($role==="User") {
-            include './paginas/user/subMenuUser.php';
-        }
-
-    }
-    ?>
-
-</div>
-
+<script type="text/javascript">
+    mudaNavbar('<?php echo $_SESSION['login']; ?>', '<?php echo $_SESSION['role']; ?>');
+</script>

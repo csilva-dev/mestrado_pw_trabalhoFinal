@@ -1,5 +1,11 @@
-<?php include './paginas/cabecalho.php' ?>
+<?php 
 
-<?php include './paginas/menu.php' ?>
+include 'php/actions/sessao.php';
 
-<?php include './paginas/rodape.php' ?>
+include './paginas/cabecalho.php';
+
+include './paginas/menu.php';
+
+include './paginas/rodape.php';
+
+?>

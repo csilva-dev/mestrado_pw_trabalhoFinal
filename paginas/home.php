@@ -1,4 +1,4 @@
-<title>Bem-Vindo</title>
+<title>Restaurante Boa Comida</title>
 <main>
 	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
@@ -9,23 +9,23 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<img src="img\food1.jpg" class="d-block w-100" alt="...">
-				<div class="carousel-caption d-none d-md-block">
-					<h5>First slide label</h5>
-					<p>Some representative placeholder content for the first slide.</p>
+				<div class="carousel-caption d-none d-md-block" style="background-color: #f2f2f280; color: #00203F;">
+					<h5>Salada com Mozzarela</h5>
+					<p>Tomate cherry com a delicadeza do mozzarela, regado com um vinagrete de ervas. Para os dias mais quentes.</p>
 				</div>
 			</div>
 			<div class="carousel-item">
 				<img src="img\food2.jpg" class="d-block w-100" alt="...">
-				<div class="carousel-caption d-none d-md-block">
-					<h5>Second slide label</h5>
-					<p>Some representative placeholder content for the second slide.</p>
+				<div class="carousel-caption d-none d-md-block" style="background-color: #f2f2f280; color: #00203F;">
+					<h5>Salmão estufado em caldo de especiarias</h5>
+					<p>Uma fusão de sabores num só prato. Para aqueles de gostam de saborear algo de diferente.</p>
 				</div>
 			</div>
 			<div class="carousel-item">
 				<img src="img\food3.jpg" class="d-block w-100" alt="...">
-				<div class="carousel-caption d-none d-md-block">
-					<h5>Third slide label</h5>
-					<p>Some representative placeholder content for the third slide.</p>
+				<div class="carousel-caption d-none d-md-block" style="background-color: #f2f2f280; color: #00203F;">
+					<h5>Fruta e Riccota</h5>
+					<p>Frescura num prato. A delicadeza da riccota acompanhada do doce da fruta. Uma refeição mais leve.</p>
 				</div>
 			</div>
 		</div>
@@ -38,64 +38,46 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
-	<div class="container-fluid">
-		<div class="row" id="info">
-			<div class="col">				
-				<div class="row">
-					<div class="col">	
-						<i class="bi bi-bullseye" style="font-size: 150px"></i>
-					</div>
-					<div class="col">	
-						<p>MISSÃO</p>
-					</div>					
-				</div>
-			</div>
-			<div class="col">
-				<div class="row">
-					<div class="col">	
-						<i class="bi bi-bullseye" style="font-size: 150px"></i>
-					</div>
-					<div class="col">	
-						<p>VISÃO</p>
-					</div>					
-				</div>
-			</div>
-			<div class="col">
-				<div class="row">
-					<div class="col">	
-						<i class="bi bi-bullseye" style="font-size: 150px"></i>
-					</div>
-					<div class="col">	
-						<p>VALORES</p>
-					</div>					
-				</div>
-			</div>			
-		</div>
-		
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col" id="logo">
-				<img src="img/pastelaria.jpg">
-			</div>
-			<div class="col">
-				<p>PASTERLARIA</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<p>PADARIA</p>				
-			</div>
-			<div class="col" id="logo">
-				<img src="img/padaria.jpg">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col" id="logo">
-				<img src="img/restaurante.jpg">
-			</div>
-			<div class="col">
-				<p>RESTAURANTE</p>
+	<div style="background-color:#f2f2f2">
+		<div class="container">
+			<div class="row" id="info">
+				<p><h2>Restaurante Boa Comida</h2></p>
+				<br><br>
+				<p>O Restaurante Boa Comida é um espaço de eleição para as suas refeições, quer as faça sozinho(a), quer decida vir em grupo, para celebrar ou simplesmente para fazer um almoço de negócios ou para juntar este ou aquele grupo.<br><br>Estamos ao seu serviço desde Setembro de 2009, mas contamos já com uma enorme experiência anterior no ramo da hotelaria. Fazemos tudo para o servir com o maior profissionalismo, primando pela qualidade dos nossos ingredientes.</p>
 			</div>
 		</div>
 	</div>
+	<div class="container">
+		<div class="row align-items-center" id="pastelaria">
+			<div class="col" id="logo">
+				<img src="img/pastelaria.jpg" class="rounded-circle">
+			</div>
+			<div class="col">
+				<p><h4>PASTERLARIA</h4><br>Dispomos de pastelaria variada, sempres fresca e muito deliciosa. Para aqueles que não dispensão um mimo. Venha deliciar-se com as nossas ofertas.</p>
+			</div>
+		</div>
+	</div>
+	<div id="servicos">
+		<div class="container">
+			<div class="row align-items-center" id="padaria">
+				<div class="col">					
+					<p><h4>PADARIA</h4><br>A Pastelaria tem ao seu dispor diversos produtos de padaria. Feitos todos os dias a<br>pensar em si. O seu pão sempre quente!</p>				
+				</div>
+				<div class="col" id="logo">
+					<img src="img/padaria.jpg" class="rounded-circle">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row align-items-center" id="restaurante">
+			<div class="col" id="logo">
+				<img src="img/restaurante.jpg" class="rounded-circle">
+			</div>
+			<div class="col align-self-center">				
+				<p><h4>RESTAURANTE</h4><br>
+				O espaço amplo oferece aos nosso clientes e amigos a possibilidade de desfrutar de uma refeição, só ou acompanhado, de forma descontraida e sem pressas.</p>
+			</div>
+		</div>
+	</div>
+

@@ -1,3 +1,8 @@
+body {
+    font-family: 'Roboto';
+    /*font-size: 22px;*/
+}
+
 #carouselExampleCaptions img {
 	object-fit: cover;
 	width: 100%;
@@ -16,28 +21,43 @@
 	padding-top: 1vh;
 	padding-bottom: 1vh;
 }
-#logo{
-	float: left;
-	width: 50%;
-	height: 28vh;
-}
+
 #logo img{
 	object-fit: cover;
 	width: 100%;
 	height: 28vh;
 }
-#slogan{
-	float: left;
-	width: 50%;
-	height: 28vh;
-	text-align: center;
-}
-#slogan h1{
-	padding: 15px;
-	font-size: 25pt;
-	font-weight: bold;
-}
+
 #info {
 	padding: 50px 30px 50px 20px;
 	background-color: #f2f2f2;
+}
+#padaria {
+	padding: 50px 30px 50px 20px;
+	background-color: #f2f2f2;
+}
+#pastelaria {
+	padding: 50px 30px 50px 20px;
+	/*background-color: #f2f2f2;*/
+}
+#restaurante {
+	padding: 50px 30px 50px 20px;
+	/*background-color: #f2f2f2;*/
+}
+#registo h4{
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+}
+#registoForm{	
+  	margin: auto;
+  	padding: 10px 30px 50px 20px;
+}
+#servicos{
+	background-color: #f2f2f2;
+}
+#subMenuUser {
+	padding: 10px 0 10px 0;
+	background-color: #f2f2f2;
+	margin-bottom: 20px;
 }

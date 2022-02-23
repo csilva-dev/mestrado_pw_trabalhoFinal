@@ -13,5 +13,4 @@ if (!$liga) {
     //echo "<script>alert('A ligação à base de dados foi estabelecida com sucesso!');</script>";
 }
 
-
 ?>

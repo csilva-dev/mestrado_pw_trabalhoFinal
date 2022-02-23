@@ -25,6 +25,7 @@ if (mysqli_query($liga,$query)) {
 	echo "<script>window.location='index.php?page=area_reservada&subpage=user';</script>";
 } else {
 	echo "<script>alert('Não foi possiver criar o registo!');</script>";
+	echo "<script>window.location='index.php?page=area_reservada&subpage=user';</script>";
 }
 
 function uuid() {

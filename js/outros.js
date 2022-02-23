@@ -1,6 +1,6 @@
 function mudaNavbar(user, role) {
 	if (role == 'Administrador' || role == 'Utilizador') {
-		document.getElementById('menu_nome').innerHTML = 'Bem vindo, ' + user;
+		document.getElementById('menu_nome').innerHTML = 'Bem Vindo, ' + user;
 		document.getElementById('acao').innerHTML = 'Sair';
 		document.getElementById('acao').href = '?sair';
 	} else {

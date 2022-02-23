@@ -14,8 +14,21 @@ $img = "";
 
 if ($nr_registos > 0) {
 	?>
+	
 	<div class="container">
 		<div class="row">
+			<div class="col">
+				<div class="row">
+					<h4>Lista de Pratos</h4>
+				</div>
+				<div class="row">
+					<h7>Existem <?php echo $nr_registos ?> pratos registados</h7>
+				</div>
+			</div>
+		</div>
+		
+		<hr>
+		<div class="row row-cols-1 row-cols-md-4 g-4">
 			<?php
 			while ($dados = mysqli_fetch_assoc($resultado)) {				
 				if ($dados['img'] === null || empty(trim($dados['img']))) {

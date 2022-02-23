@@ -9,6 +9,7 @@ $disponivel_take = ($_POST['disponivel_take'] == 'on') ? 1 : 0 ;
 $tipo = $_POST['tipo'];
 $categoria = $_POST['categoria'];
 $destaque = ($_POST['destaque'] == 'on') ? 1 : 0 ;
+$img = $_POST['img'];
 
 // File upload path
 $targetDir = "img/";
@@ -36,7 +37,7 @@ if (!empty($_FILES["img"]["name"])) {
 	}
 
 } else {
-	$query = "UPDATE projetoWEB.prato SET nome='$nome', descricao='$descricao', img='', preco=$preco, disponivel_take='$disponivel_take', tipo='$tipo', categoria='$categoria' WHERE uuid = UUID_TO_BIN('$uuid')";
+	$query = "UPDATE projetoWEB.prato SET nome='$nome', descricao='$descricao', img='$img', preco=$preco, disponivel_take='$disponivel_take', tipo='$tipo', categoria='$categoria' WHERE uuid = UUID_TO_BIN('$uuid')";
 	if (mysqli_query($liga,$query)) {
 		echo "<script>alert('Registo editado com sucesso!');</script>";
 		echo "<script>window.location='index.php?page=area_reservada&subpage=prato';</script>";
