@@ -15,7 +15,7 @@ $img = "";
 if ($nr_registos > 0) {
 	?>
 	
-	<div class="container">
+	<div class="container" style="min-height: 54vh;">
 		<div class="row">
 			<div class="col">
 				<div class="row">
@@ -46,6 +46,7 @@ if ($nr_registos > 0) {
 							<h6><?php $dados['preco']; ?></h6>
 							<b>#<?php echo $dados['tipo']; ?> #<?php echo $dados['categoria']; ?></b><br>
 							<a href="index.php?page=area_reservada&subpage=prato&edita=<?php echo $dados['uuid']; ?>" class="stretched-link">Editar</a>
+							<a href="index.php?page=area_reservada&subpage=prato&apaga=<?php echo $dados['uuid']; ?>" class="stretched-link">Apagar</a>
 						</div>
 					</div>
 				</div>

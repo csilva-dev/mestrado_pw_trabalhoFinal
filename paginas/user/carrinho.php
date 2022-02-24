@@ -108,7 +108,7 @@ if(count($_SESSION['carrinho'])==0){
                             <td><?php echo $sub; ?> €</td>
                             <td>
                                 <input type="submit" class="btn btn-outline-dark" value="Atualizar">
-                                <a href="index.php?page=area_reservada&subpage=carrinho&acao=del&uuid='.$uuid.'">Remover</a>
+                                <a href="index.php?page=area_reservada&subpage=carrinho&acao=del&uuid=<?php echo $uuid ?>">Remover</a>
                             </td>
                         </tr>                    
                         <?php

@@ -27,7 +27,7 @@ $nr_doc = $ln2['num'] + 1;
 
 	//criando a query de inserção à tabela facturas -->caso haja um erro na consulta
 $uuid_ft = uuid();
-$query = "INSERT INTO take_away (uuid, `data`, cliente_uuid, modo_pag, num) VALUES(uuid_to_bin('$uuid_ft'), now(), UUID_TO_BIN('$user_uuid'), '$pag', $nr_doc)";
+$query = "INSERT INTO take_away (uuid, `data`, cliente_uuid, modo_pag, num, valor) VALUES(uuid_to_bin('$uuid_ft'), now(), UUID_TO_BIN('$user_uuid'), '$pag', $nr_doc, $total1)";
 
 $sql = mysqli_query($liga, $query) or die(mysqli_error($liga));
 

@@ -12,11 +12,12 @@ $email = $_POST['email'];
 $role = $_POST['role'];
 $username = $_POST['username'];
 $password = $_POST['password'];
+$tel = $_POST['tel'];
 
 include ('php/bd/ligaBD.php');
 
 $query = "UPDATE projetoWEB.cliente 
-			SET nome='$nome', morada='$morada', cod_postal='$cod_postal', localidade='$localidade', nif=$nif, pais='$pais', email='$email', role='$role', username='$username', password='$password' WHERE uuid=UUID_TO_BIN('$uuid')";
+			SET nome='$nome', morada='$morada', cod_postal='$cod_postal', localidade='$localidade', nif=$nif, pais='$pais', email='$email', role='$role', username='$username', password='$password', tel = $tel WHERE uuid=UUID_TO_BIN('$uuid')";
 
 if (mysqli_query($liga,$query)) {
 	echo "<script>alert('Registo atualizado com sucesso!');</script>";

@@ -5,7 +5,7 @@ include ('php/bd/ligaBD.php');
 if (isset($_GET['edita'])) {
 	$user_uuid = $_GET['edita'];
 
-	$query = "SELECT bin_to_uuid(uuid) as uuid, nome, morada, cod_postal, localidade, nif, pais, email, `role`, username, password, data_registo FROM projetoWEB.cliente WHERE uuid = UUID_TO_BIN('$user_uuid')";
+	$query = "SELECT bin_to_uuid(uuid) as uuid, nome, morada, cod_postal, localidade, nif, pais, email, `role`, username, password, data_registo, tel FROM projetoWEB.cliente WHERE uuid = UUID_TO_BIN('$user_uuid')";
 
 	$resultado = mysqli_query($liga, $query);
 	if ($resultado === false) {
@@ -50,7 +50,7 @@ if (isset($_GET['edita'])) {
 
 					<div class="mb-3">
 						<label for="formGroupExampleInput5" class="form-label">Nº Contribuinte</label>
-						<input type="number" class="form-control" id="formGroupExampleInput5" placeholder="Insira o seu número de contribuinte" name="nif" value="<?php echo $dados1['nif'];; ?>" required>
+						<input type="number" class="form-control" id="formGroupExampleInput5" placeholder="Insira o seu número de contribuinte" name="nif" value="<?php echo $dados1['nif']; ?>" required>
 					</div>
 					<div class="mb-3">
 						<label for="formGroupExampleInput6" class="form-label">Pais</label>
@@ -66,7 +66,7 @@ if (isset($_GET['edita'])) {
 					</div>
 					<div class="mb-3">
 						<label for="formGroupExampleInput12" class="form-label">Telefone</label>
-						<input type="number" class="form-control" id="formGroupExampleInput12" placeholder="Insira o seu numero de telefone" name="tel" value="<?php echo $dados1['tel'] ?>" required>
+						<input type="number" class="form-control" id="formGroupExampleInput12" placeholder="Insira o seu numero de telefone" name="tel" value="<?php echo $dados1['tel']; ?>" required>
 					</div>
 				</div>
 				<div class="col">

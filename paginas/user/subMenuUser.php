@@ -41,6 +41,9 @@
         case "conta":
             include 'conta.php';
             break;
+        case "edita_conta":
+            include 'atualiza_conta.php';
+            break;
         case "carrinho":
             include 'carrinho.php';
             break;

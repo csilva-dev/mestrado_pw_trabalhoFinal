@@ -23,7 +23,7 @@ $dados1 = mysqli_fetch_assoc($resultado);
         </div>
     </div>
     <hr>
-    <form id="registo" class="" action="php/actions/cliente/insert.php" id="form">
+    <form id="registo" class="" action="index.php?page=area_reservada&subpage=edita_conta&editar=<?php echo $dados1['uuid'];?>" method="POST">
         <div class="row">
             <div class="col">
                 <div class="mb-3">

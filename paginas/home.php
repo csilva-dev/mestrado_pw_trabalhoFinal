@@ -48,35 +48,96 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="row align-items-center" id="pastelaria">
-			<div class="col" id="logo">
-				<img src="img/pastelaria.jpg" class="rounded-circle">
+		<div class="row" id="menu">
+			<p><h2>Menu</h2></p>
+			<hr>
+			<div class="col">
+				<h5><b>Segunda</b></h5>
+				<hr>
+				<p><b>Almoço</b></p>
+				<p>Cozido à Portuguesa</p>
+				<p><b>Jantar</b></p>
+				<p>Bacalhau à Braz</p>
 			</div>
 			<div class="col">
-				<p><h4>PASTERLARIA</h4><br>Dispomos de pastelaria variada, sempres fresca e muito deliciosa. Para aqueles que não dispensão um mimo. Venha deliciar-se com as nossas ofertas.</p>
+				<h5><b>Terça</b></h5>
+				<hr>
+				<p><b>Almoço</b></p>
+				<p>Feijão Frade com Atum</p>
+				<p><b>Jantar</b></p>
+				<p>Iscas com Batata</p>
+			</div>
+			<div class="col">
+				<h5><b>Quarta</b></h5>
+				<hr>
+				<p><b>Almoço</b></p>
+				<p>Bifanas</p>
+				<p><b>Jantar</b></p>
+				<p>Perca Cozida</p>
+			</div>
+			<div class="col">
+				<h5><b>Quinta</b></h5>
+				<hr>
+				<p><b>Almoço</b></p>
+				<p>Bacalhau Grelhado</p>
+				<p><b>Jantar</b></p>
+				<p>Legumes Salteados com Falafel</p>
+			</div>
+			<div class="col">
+				<h5><b>Sexta</b></h5>
+				<hr>
+				<p><b>Almoço</b></p>
+				<p>Hamburgeres Vegan com Batata Frita</p>
+				<p><b>Jantar</b></p>
+				<p>Bitoque</p>
+			</div>
+			<div class="col">
+				<h5><b>Sábado</b></h5>
+				<hr>
+				<p><b>Almoço</b></p>
+				<p>Polvo Cozido</p>
+				<p><b>Jantar</b></p>
+				<p>Carne de Porco à Alentejana</p>
+			</div>
+			<div class="col">
+				<h5><b>Domingo</b></h5>
+				<hr>
+				<p><b>ENCERRADO</b></p>
 			</div>
 		</div>
 	</div>
 	<div id="servicos">
 		<div class="container">
 			<div class="row align-items-center" id="padaria">
-				<div class="col">					
-					<p><h4>PADARIA</h4><br>A Pastelaria tem ao seu dispor diversos produtos de padaria. Feitos todos os dias a<br>pensar em si. O seu pão sempre quente!</p>				
-				</div>
 				<div class="col" id="logo">
-					<img src="img/padaria.jpg" class="rounded-circle">
+					<img src="img/pastelaria.jpg" class="rounded-circle">
+				</div>
+				<div class="col">
+					<p><h4>PASTERLARIA</h4><br>Dispomos de pastelaria variada, sempres fresca e muito deliciosa. Para aqueles que não dispensão um mimo. Venha deliciar-se com as nossas ofertas.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="container">
-		<div class="row align-items-center" id="restaurante">
-			<div class="col" id="logo">
-				<img src="img/restaurante.jpg" class="rounded-circle">
+		<div class="row align-items-center" id="pastelaria">
+			<div class="col">					
+				<p><h4>PADARIA</h4><br>A Pastelaria tem ao seu dispor diversos produtos de padaria. Feitos todos os dias a<br>pensar em si. O seu pão sempre quente!</p>				
 			</div>
-			<div class="col align-self-center">				
-				<p><h4>RESTAURANTE</h4><br>
-				O espaço amplo oferece aos nosso clientes e amigos a possibilidade de desfrutar de uma refeição, só ou acompanhado, de forma descontraida e sem pressas.</p>
+			<div class="col" id="logo">
+				<img src="img/padaria.jpg" class="rounded-circle">
+			</div>
+		</div>
+	</div>
+	<div id="servicos">
+		<div class="container">
+			<div class="row align-items-center" id="padaria1">
+				<div class="col" id="logo">
+					<img src="img/restaurante.jpg" class="rounded-circle">
+				</div>
+				<div class="col align-self-center">				
+					<p><h4>RESTAURANTE</h4><br>
+					O espaço amplo oferece aos nosso clientes e amigos a possibilidade de desfrutar de uma refeição, só ou acompanhado, de forma descontraida e sem pressas.</p>
+				</div>
 			</div>
 		</div>
 	</div>

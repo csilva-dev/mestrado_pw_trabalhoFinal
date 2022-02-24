@@ -35,16 +35,16 @@ $tel = $dados['tel'];
 				<hr>
 				<div class="mb-3">
 					<label for="formGroupExampleInput" class="form-label">Nome</label>
-					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira o seu nome" name="nome" value="nome" required>
+					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira o seu nome" name="nome" value="<?php echo $nome; ?>" required>
 				</div>
 				<div class="mb-3">
 					<label for="formGroupExampleInput2" class="form-label">Nº Contribuinte</label>
-					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Insira o seu nif" name="nif" value="nif">
+					<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Insira o seu nif" name="nif" value="<?php echo $nif; ?>">
 				</div>
 
 				<div class="mb-3">
 					<label for="formGroupExampleInput3" class="form-label">Contato Telefónico</label>
-					<input type="number" class="form-control" id="formGroupExampleInput3" placeholder="Insira o seu telefone" name="tel" value="tel" required>
+					<input type="number" class="form-control" id="formGroupExampleInput3" placeholder="Insira o seu telefone" name="tel" value="<?php echo $tel; ?>" required>
 				</div>
 			</div>
 			<div class="col">

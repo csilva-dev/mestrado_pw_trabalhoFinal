@@ -1,10 +1,12 @@
+<title>Histórico</title>
+
 <?php 
 
 include 'php/bd/ligaBD.php';
 
 $user_uuid = $_SESSION['user_uuid'];
 
-$query = "SELECT bin_to_uuid(uuid) as uuid, `data`, cliente_uuid, modo_pag, num FROM projetoWEB.take_away where cliente_uuid = UUID_TO_BIN('$user_uuid') order by num desc";
+$query = "SELECT bin_to_uuid(uuid) as uuid, `data`, cliente_uuid, modo_pag, num, valor FROM projetoWEB.take_away where cliente_uuid = UUID_TO_BIN('$user_uuid') order by num desc";
 
 $resultado = mysqli_query($liga, $query);
 $nr_registos = mysqli_num_rows($resultado);
@@ -16,7 +18,7 @@ $nr_registos3 = mysqli_num_rows($resultado3);
 $id_acord = "a";
 $id_acord2 = "b";
 ?>
-<div class="container" style="margin-bottom: 20px">
+<div class="container" style="margin-bottom: 20px; min-height: 46.7vh;">
 	<div class="row">		
 		<h4>Histórico de Encomedas e Reservas</h4>		
 	</div>
@@ -45,7 +47,8 @@ $id_acord2 = "b";
 									<div class="col">
 										<h5><?php echo date('Y-m-d', strtotime($dados['data'])); ?></h5>
 									</div>
-								</div>					
+								</div>
+								<hr>
 								<?php
 								$ta_uuid = $dados['uuid'];
 								$query1 = "SELECT bin_to_uuid(uuid) as uuid, bin_to_uuid(prato_uuid) as prato_uuid, qtt, take_away_uuid FROM projetoWEB.take_away_linhas where take_away_uuid = UUID_TO_BIN('$ta_uuid')";
@@ -66,14 +69,13 @@ $id_acord2 = "b";
 									</div>
 									<div class="row">
 										<div class="col">
-											<h7>Quantidade</h7>
-											
+											<h7>Quantidade</h7>											
 										</div>
 										<div class="col">
-											<h7><?php echo $linhas['qtt']; ?></h7>
-											
+											<h7><?php echo $linhas['qtt']; ?></h7>											
 										</div>
 									</div>
+									<hr>
 									<?php
 								}
 								?>
@@ -85,7 +87,16 @@ $id_acord2 = "b";
 										<h7><?php echo $dados['modo_pag']; ?></h7>								
 									</div>
 								</div>
-								<br>
+								<hr>
+								<div class="row">
+									<div class="col">
+										<h7>Valor</h7>
+									</div>
+									<div class="col">
+										<h5 style="color: #00203F;">€ <?php echo $dados['valor']; ?></h5>
+									</div>
+								</div>
+								<hr>
 								<div class="row">
 									<form action="php/pdf/invoice.php?uuid=<?php echo $ta_uuid ?>" method="POST" target="_blank">
 										<button class="btn btn-primary">Ver Fatura</button>

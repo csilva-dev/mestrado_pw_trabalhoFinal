@@ -12,12 +12,13 @@ $email = $_POST['email'];
 $role = $_POST['role'];
 $username = $_POST['username'];
 $password = $_POST['password'];
+$tel = $_POST['tel'];
 
 include ('php/bd/ligaBD.php');
 
 $query = "INSERT INTO projetoWEB.cliente
-		(uuid, nome, morada, cod_postal, localidade, nif, pais, email, `role`, username, password, data_registo)
-VALUES (uuid_to_bin('$uuid'), '$nome', '$morada', '$cod_postal', '$localidade',$nif, '$pais', '$email', '$role', '$username', '$password', now());
+		(uuid, nome, morada, cod_postal, localidade, nif, pais, email, `role`, username, password, data_registo, tel)
+VALUES (uuid_to_bin('$uuid'), '$nome', '$morada', '$cod_postal', '$localidade',$nif, '$pais', '$email', '$role', '$username', '$password', now(), $tel);
 ";
 
 if (mysqli_query($liga,$query)) {

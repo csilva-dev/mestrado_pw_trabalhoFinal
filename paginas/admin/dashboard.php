@@ -6,10 +6,10 @@
             <div class="col">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none"><span class="fs-4">DASHBOARD</span></a>
                 <hr>
-                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu1">
                     <li>
                         <a href="submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle"><i class="fs-4 bi bi-people"></i><span class="ms-1 d-none d-sm-inline">Utilizadores</span></a>
-                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu1">
                             <li class="w-100">
                                 <a href="index.php?page=area_reservada&subpage=user" class="nav-link px-0"> <span class="d-none d-sm-inline">Lista</span></a>
                             </li>

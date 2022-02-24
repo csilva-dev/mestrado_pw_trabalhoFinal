@@ -12,13 +12,16 @@
 					<a class="nav-link active" aria-current="page" href="index.php?page=home">Inicio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="index.php?page=home#pastelaria">Pastelaria</a>
+					<a class="nav-link" href="index.php?page=home#menu">Menu</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="index.php?page=home#padaria">Padaria</a>
+					<a class="nav-link" href="index.php?page=home#padaria">Pastelaria</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="index.php?page=home#restaurante">Restaurante</a>
+					<a class="nav-link" href="index.php?page=home#pastelaria">Padaria</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="index.php?page=home#padaria1">Restaurante</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="index.php?page=ondeestamos">Onde Estamos</a>

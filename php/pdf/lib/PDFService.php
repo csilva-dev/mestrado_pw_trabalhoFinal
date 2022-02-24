@@ -22,8 +22,8 @@ class PDFService {
         ));
         $pdf->SetTitle('Fatura Nº - ' . $cabecalho['num']);
         $pdf->SetMargins(20, 10, 20, true);
-        if (@file_exists(dirname(__FILE__) . '/lang/eng.php')) {
-            require_once (dirname(__FILE__) . '/lang/eng.php');
+        if (@file_exists(dirname(__FILE__) . '/lang/por.php')) {
+            require_once (dirname(__FILE__) . '/lang/por.php');
             $pdf->setLanguageArray($l);
         }
         $pdf->SetFont('helvetica', '', 11);

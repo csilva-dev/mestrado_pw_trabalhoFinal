@@ -4,7 +4,7 @@
 
 include ('php/bd/ligaBD.php');
 
-$query = "SELECT bin_to_uuid(uuid) as uuid, nome, morada, cod_postal, localidade, nif, pais, email, `role`, username, password, data_registo FROM projetoWEB.cliente order by data_registo desc";
+$query = "SELECT bin_to_uuid(uuid) as uuid, nome, morada, cod_postal, localidade, nif, pais, email, `role`, username, password, data_registo, tel FROM projetoWEB.cliente order by data_registo desc";
 
 $resultado = mysqli_query($liga, $query);
 $nr_registos = mysqli_num_rows($resultado);
@@ -12,7 +12,7 @@ $nr_registos = mysqli_num_rows($resultado);
 if ($nr_registos > 0) {
 
 	?>
-	<div class="container">
+	<div class="container" style="min-height: 54vh;">
 		<div class="row">
 			<div class="col">
 				<div class="row">

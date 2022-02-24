@@ -4,7 +4,7 @@ $uuid = $_GET['apaga'];
 
 include ('php/bd/ligaBD.php');
 
-$query = "DELETE FROM projetoWEB.cliente WHERE uuid=UUID_TO_BIN('$uuid')";
+$query = "DELETE FROM prato WHERE uuid=UUID_TO_BIN('$uuid')";
 
 if (mysqli_query($liga,$query)) {
 	echo "<script>alert('Registo elimidado com sucesso!');</script>";
