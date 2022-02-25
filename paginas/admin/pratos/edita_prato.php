@@ -5,7 +5,7 @@ include ('php/bd/ligaBD.php');
 if (isset($_GET['edita'])) {
 	$prato_uuid = $_GET['edita'];
 
-	$query = "SELECT bin_to_uuid(uuid) as uuid, nome, descricao, img, preco, disponivel_take, tipo, categoria FROM projetoWEB.prato WHERE uuid = UUID_TO_BIN('$prato_uuid')";
+	$query = "SELECT bin_to_uuid(uuid) as uuid, nome, descricao, img, preco, disponivel_take, tipo, categoria, destaque FROM projetoWEB.prato WHERE uuid = UUID_TO_BIN('$prato_uuid')";
 
 	$resultado = mysqli_query($liga, $query);
 	if ($resultado === false) {
@@ -13,8 +13,9 @@ if (isset($_GET['edita'])) {
 	}
 	$dados1 = mysqli_fetch_assoc($resultado);
 	$disponivel_take = ($dados1['disponivel_take'] == 1) ? 'on' : 'off' ;
+	$destaque = ($dados1['destaque'] == 1) ? 'on' : 'off' ;
 	?>
-	<div class="container">
+	<div class="container" style="min-height: 55.8vh;">
 		<div class="row">
 			<div class="col">
 				<div class="row">
@@ -44,7 +45,7 @@ if (isset($_GET['edita'])) {
 						<label for="formGroupExampleInput4" class="form-check-label">Disponivel Take-Away</label>
 					</div>
 					<div class="mb-3">
-						<input type="checkbox" class="form-check-input" id="formGroupExampleInput8" name="destaque" checked="<?php echo $destaques; ?>">
+						<input type="checkbox" class="form-check-input" id="formGroupExampleInput8" name="destaque" checked="<?php echo $destaque; ?>">
 						<label for="formGroupExampleInput8" class="form-check-label">Aparece nos Destaques</label>
 					</div>
 				</div>

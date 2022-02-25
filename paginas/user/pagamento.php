@@ -23,7 +23,7 @@ $tel = $dados['tel'];
 	<div class="row">
 		<div class="col">
 			<div class="row">
-				<h4>Carrinho de Compras</h4>
+				<h4>Pagamento</h4>
 			</div>
 		</div>
 	</div>

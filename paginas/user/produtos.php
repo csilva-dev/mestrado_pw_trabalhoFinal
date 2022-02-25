@@ -28,7 +28,7 @@ if ($nr_registos > 0) {
     <hr>
     <div class="row row-cols-1 row-cols-md-4 g-4">
       <?php
-      while ($dados = mysqli_fetch_assoc($resultado)) {       
+      while ($dados = mysqli_fetch_assoc($resultado)) {
         if ($dados['img'] === null || empty(trim($dados['img']))) {
           $img = 'img/sem_img.png';
         } else {
@@ -41,7 +41,7 @@ if ($nr_registos > 0) {
             <div class="card-body">
               <h5><?php echo $dados['nome']; ?></h5>
               <p class="card-text"><?php echo $dados['descricao']; ?></p>
-              <h6><?php $dados['preco']; ?></h6>
+              <h6>€ <?php echo $dados['preco']; ?></h6>
               <b>#<?php echo $dados['tipo']; ?> #<?php echo $dados['categoria']; ?></b><br>
               <a href="index.php?page=area_reservada&subpage=carrinho&acao=add&uuid=<?php echo $dados['uuid']; ?>" class="stretched-link">Adicionar ao Carrinho</a>
             </div>

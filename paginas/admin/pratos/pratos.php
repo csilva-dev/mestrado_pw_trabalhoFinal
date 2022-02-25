@@ -43,10 +43,10 @@ if ($nr_registos > 0) {
 						<div class="card-body">
 							<h5><?php echo $dados['nome']; ?></h5>
 							<p class="card-text"><?php echo $dados['descricao']; ?></p>
-							<h6><?php $dados['preco']; ?></h6>
+							<h6>€ <?php echo $dados['preco']; ?></h6>
 							<b>#<?php echo $dados['tipo']; ?> #<?php echo $dados['categoria']; ?></b><br>
-							<a href="index.php?page=area_reservada&subpage=prato&edita=<?php echo $dados['uuid']; ?>" class="stretched-link">Editar</a>
-							<a href="index.php?page=area_reservada&subpage=prato&apaga=<?php echo $dados['uuid']; ?>" class="stretched-link">Apagar</a>
+							<a class="card-link" href="index.php?page=area_reservada&subpage=prato&edita=<?php echo $dados['uuid']; ?>" class="stretched-link">Editar</a>&nbsp;&nbsp;
+							<a class="card-link" href="index.php?page=area_reservada&subpage=prato&apaga=<?php echo $dados['uuid']; ?>" class="stretched-link">Apagar</a>
 						</div>
 					</div>
 				</div>

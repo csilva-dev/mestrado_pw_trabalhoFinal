@@ -11,7 +11,7 @@ if ($resultado === false) {
 }
 $dados1 = mysqli_fetch_assoc($resultado);
 ?>
-<div class="container" style="min-height: 54vh;">
+<div class="container" style="min-height: 55.8vh;">
 	<div class="row">
 		<div class="col">
 			<div class="row">
