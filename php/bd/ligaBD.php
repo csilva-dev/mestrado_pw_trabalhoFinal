@@ -2,7 +2,7 @@
 
 $server = "localhost:3306";
 $user = "root";
-$pwd = "password";
+$pwd = "";
 $bd = "projetoWEB";
 
 $liga = mysqli_connect($server, $user, $pwd, $bd);
