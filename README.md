@@ -4,8 +4,6 @@
 
 Site do restaurante Boa Comida (fictício);
 
-Desenvolvido por Carlos Silva, a22108200;
-
 ---
 
 **Credenciais de acesso:**
